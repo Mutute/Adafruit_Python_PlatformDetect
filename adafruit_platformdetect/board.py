@@ -672,6 +672,8 @@ class Board:
             board = boards.ROCK_PI_4_SE
         if board_value and "ROCK3 Model A" in board_value:
             board = boards.ROCK_PI_3A
+        if board_value and "Radxa CM5 IO" in board_value:
+            board = boards.RADXA_CM5        
         return board
 
     def _libre_id(self) -> Optional[str]:
